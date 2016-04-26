@@ -17,18 +17,23 @@ export default class Animations {
 		this.elem = elem;
     this.fadeInElementCont = elem.querySelector('.js-fade-in-container');
     this.fadeInElemText = elem.querySelectorAll('.js-fade-in-heading-text');
-    this.fadingLinks = elem.querySelectorAll('js-fade-in-link');
+    this.fadingLinks = Array.from(document.querySelectorAll('.js-fade-in-link'));
     
 		this.start();
 	}
 
-    /**
-    * Run first part of animation and call subsequent part 
-    * @type {Function}
-    * @private
-    */
-
+  /** Fade in heading and tagline, set nav links to invisible */
   start() {
+    
+    this.fadingLinks.forEach((link) => {
+      
+     link.addEventListener("click", this.scrollToSection, 0.25);      
+      
+      TweenLite.set(link, {
+        autoAlpha: 0
+      })
+    });
+    
     TweenLite.fromTo(this.fadeInElemText, 3.5, {
       autoAlpha: 0.05,
       ease: SlowMo.ease.config(0.3, 1, false)
@@ -40,8 +45,22 @@ export default class Animations {
     });
   }
   
+  /** Fade in each main nav link */
   animateLinks() {
-    console.log("links start fading in");
+    
+    var tl = new TimelineLite();
+    
+    tl.staggerTo('.js-fade-in-link', 0.25, {
+      autoAlpha: 1,
+    }, 0.75);
   }
+  
+  /** Scroll to each section */
+  
+  scrollToSection() {
+    console.log(this.link);
+  };
+  
+  /** Make top navigation sticky */
 
 }

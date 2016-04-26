@@ -6,7 +6,7 @@
 	<meta name=viewport content="width=device-width,initial-scale=1">
 	<meta name=description content="">
   <link rel="stylesheet" type="text/css" href="public/site.css">
-	<title>PROJECT</title>
+	<title>Sasha Burchuk | Frontend Developer</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/utils/Draggable.min.js"></script>
@@ -20,94 +20,84 @@
   
   <section class="intro">
     <div class="flex-center js-fade-in-container">
-      <h1 class="faded js-fade-in-heading-text">Lorem Ipsum</h1>
-      <p class="faded js-fade-in-heading-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+      <h1 class="faded js-fade-in-heading-text">Sasha Burchuk</h1>
+      <p class="faded js-fade-in-heading-text">A frontend developer from Portland, Oregon</p>
    </div>
     <ul class="cf">
-      <li class="js-fade-in-link"><a href="#">One</a></li>
-      <li class="js-fade-in-link"><a href="#">Two</a></li>
-      <li class="js-fade-in-link"><a href="#">Three</a></li>
+      <li class="js-fade-in-link"><a href="#one" data-link="one">Work</a></li>
+      <li class="js-fade-in-link"><a href="#two" data-link="two">About</a></li>
+      <li class="js-fade-in-link"><a href="#three" data-link="three">Contact</a></li>
     </ul>  
   </section>
   
-  <section id="one" class="work js-draggable">
-    <div class="heading">More Lorem</div>
+  <section id="one" class="work js-draggable" data-link-ref="one">
+    <div class="heading js-heading">Recent Work</div>
       <div class="_scroll js-draggable-container">
         <ul class="_handle js-draggable-scroller">
-          <li class="js-dragbar-item vertical">
-            <a href="#">
-              <img src="http://placehold.it/300x400">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
           <li class="js-dragbar-item">
-            <a href="#">
-              <img src="http://placehold.it/400x300">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
+            <a href="http://www.android.com/versions/marshmallow-6-0/">
+              <img class="js-dragbar-img" src="http://placehold.it/300x400">
+              <p><span>Android.com Marshmallow Launch &mdash; </span>Worked as part of a team at Instrument to build new product pages around the release of their Marshmallow OS update.</p>
             </a>
           </li>
           <li class="js-dragbar-item vertical">
+            <a href="https://events.google.com/io2016/attend">
+              <img class="js-dragbar-img" src="http://placehold.it/300x400">
+              <p><span>Google I/O 2016 Attending &mdash; </span>Prototyped the first /attending page for Google's yearly developer conference, I/O. Another Instrument project. </p>
+            </a>
+          </li>
+          <li class="js-dragbar-item">
+            <a href="http://www.standupcomedytoo.com/">
+              <img class="js-dragbar-img" src="http://placehold.it/400x300">
+              <p><span>Stand Up Comedy &mdash; </span>Bespoke Shopify theme for a high-end avant garde retail outift based in Portland, OR. Design by Scott Ponik</p>
+            </a>
+          </li>
+          <li class="js-dragbar-item">
+            <a href="http://www.cloneawilly.com">
+              <img class="js-dragbar-img" src="http://placehold.it/400x300">
+              <p><span>Empire Labs and Clone-A-Willy &mdash; </span>This client needed a custom Shopify experience and site redesign, and I helped them find and hire incredible talent and also rebuilt their site. Their conversions doubled within a few month of the relaunch.</p>
+            </a>
+          </li>
+          <li class="js-dragbar-item">
             <a href="#">
-              <img src="http://placehold.it/300x400">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
+              <img class="js-dragbar-img" src="http://placehold.it/400x300">
+              <p><span>Todd Templeman &mdash; </span>Designed by Erika Hassinger, built on Koken's CMS. I really enjoy using Koken as an alternative to Squarespace or WordPress because it's lightweight, the UI is easy for clients to use, and it has excellent image optimization built in.</p>
+            </a>
+          </li>
+          <li class="js-dragbar-item">
+            <a href="#">
+              <img class="js-dragbar-img" src="http://placehold.it/400x300">
+              <p><span>Shawn Steward &mdash; </span>Also designed by Erika Hassinger, also built on Koken's CMS. A fun study in form and using multiple page layouts.</p>
             </a>
           </li>
           <li class="js-dragbar-item vertical">
-            <a href="#">
-              <img src="http://placehold.it/300x400">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-          <li class="js-dragbar-item">
-            <a href="#">
-              <img src="http://placehold.it/400x300">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-          <li class="js-dragbar-item">
-            <a href="#">
-              <img src="http://placehold.it/400x300">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-          <li class="js-dragbar-item vertical">
-            <a href="#">
-              <img src="http://placehold.it/300x400">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-          <li class="js-dragbar-item">
-            <a href="#">
-              <img src="http://placehold.it/400x300">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-          <li class="js-dragbar-item vertical">
-            <a href="#">
-              <img src="http://placehold.it/300x400">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-          <li class="js-dragbar-item">
-            <a href="#">
-              <img src="http://placehold.it/300x400">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-          <li class="js-dragbar-item">
-            <a href="#">
-              <img src="http://placehold.it/400x300">
-              <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
         </ul>
      </div>   
   </section>
   
-  <section id="two" class="about">
+  <section id="two" class="about" data-link-ref="two">
+    <div class="methods">
+      <!--<h3>Methods</h3>
+      <ul>
+        <li>SCSS</li>
+        <li>Componetized JS</li>
+        <li>Responsive web development</li>
+        <li>Performance Budgets</li>
+        <li>ES6/ESNext</li>
+        <li>Greensock (GSAP)</li>
+        <li>User Experience</li>
+        <li>Empathy-driven development</li>
+        <li>WordPress, Koken & Shopify custom themes</li>
+      </ul>
+    </div>
+    <div class="about">
+      Loyal lover of the digital-first creative agency where I work, <a href="http://www.instrument.com">Instrument</a>. 
+      Washington DC => Portland => New Orleans => San Francisco => Portland => Morelia, Mexico => Buenos Aires => Portland. 
+      Freelance developer since 2013. I also do interior design &amp; build as a hobby. 
+    </div> -->
   </section>
   
-  <section id="three" class="contact">
+  <section id="three" class="contact" data-link-ref="three">
   </section>
 <script src="public/js/ThrowPropsPlugin.js"></script>
 <script src="public/js/site.js"></script>

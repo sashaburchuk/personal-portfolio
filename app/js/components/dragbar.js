@@ -22,24 +22,34 @@ export default class Dragbar {
     
     this.dragbarItems = Array.from(document.querySelectorAll('.js-dragbar-item'));
     
+    this.dragbarImgs = Array.from(document.querySelectorAll('.js-dragbar-img'));
+    
     this.setupDragbar(); 
+   
+    window.addEventListener('load', () => {
+     this.setContWidth();
+   }, false ); 
     
-
   }
-  
-  setupDragbar() {
-    
-    let setWidthProperty = 0;
+   
+   
+  /** Grab the width of all the image container divs and calculate/set width of their container */ 
+  setContWidth() {
+    this.setWidthProperty = 0;
     
     this.dragbarItems.forEach((item) => {
-      setWidthProperty += item.offsetWidth;
+      this.setWidthProperty += item.offsetWidth;
     });
     
     TweenMax.set(this.dragbarElem, {
-      width: setWidthProperty
+      width: this.setWidthProperty
     });
     
-    console.log(setWidthProperty);
+  }
+  
+  
+  /** Set options for GSAP Dragbar */
+  setupDragbar() {
     
     Draggable.create(this.dragbarElem, {
       type: "x",
@@ -48,7 +58,14 @@ export default class Dragbar {
       minimumMovement: 6,
       lockAxis: true,
       edgeResistance: 1,
-      dragResistance: 0
+      dragResistance: 0,
+      
     });
   }  
+  
+  /** Swap out headings on drag bar for old work and new work */
+  
+  // if you want to do this, loop over each item in the array till you get to the one with the js hook, add all of the items up till that one together in width, return that width, position an invisible div absolutely and use as a "sensor" and put the sensor handle and the returned width number as the two params in .hitTest
+  
+  /** Fade in each image when it reaches the right side of the viewport */
 }
