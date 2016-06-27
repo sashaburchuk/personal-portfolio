@@ -5,7 +5,8 @@
 	<meta http-equiv=X-UA-Compatible content="IE=edge">
 	<meta name=viewport content="width=device-width,initial-scale=1">
 	<meta name=description content="">
-  <link rel="stylesheet" type="text/css" href="public/site.css">
+  <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="site.css">
 	<title>Sasha Burchuk | Frontend Developer</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
@@ -23,81 +24,110 @@
       <h1 class="faded js-fade-in-heading-text">Sasha Burchuk</h1>
       <p class="faded js-fade-in-heading-text">A frontend developer from Portland, Oregon</p>
    </div>
-    <ul class="cf">
-      <li class="js-fade-in-link"><a href="#one" data-link="one">Work</a></li>
-      <li class="js-fade-in-link"><a href="#two" data-link="two">About</a></li>
-      <li class="js-fade-in-link"><a href="#three" data-link="three">Contact</a></li>
-    </ul>  
+  <script type="text/javascript">
+      //<![CDATA[
+      <!--
+      var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+      "=42){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+      ".substr(0,ol);}f(\")03,\\\"\\\"\\\\(,?7*r=-dloybdi7*[ch$ok`m;_ F730\\\\520\\"+
+      "\\410\\\\630\\\\200\\\\UV/730\\\\630\\\\320\\\\A200\\\\400\\\\r\\\\600\\\\r" +
+      "\\\\)t\\\\630\\\\010\\\\n\\\\t\\\\200\\\\n\\\\220\\\\100\\\\,d2(73ZW330\\\\" +
+      "dn\\\\PPF[220\\\\P410\\\\r\\\\600\\\\C@N^@ZP010\\\\QJFOTCpz\\\"(f};o nruter" +
+      "};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;i=+y)03==i(fi{)++i;l" +
+      "<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"                   ;
+      while(x=eval(x));
+      //-->
+      //]]>
+    </script>
   </section>
   
   <section id="one" class="work js-draggable" data-link-ref="one">
-    <div class="heading js-heading">Recent Work</div>
+    <h2 class="heading js-heading">Recent Work</h2>
       <div class="_scroll js-draggable-container">
-        <ul class="_handle js-draggable-scroller">
+        <ul class="_handle cf js-draggable-scroller">
           <li class="js-dragbar-item">
-            <a href="http://www.android.com/versions/marshmallow-6-0/">
-              <img class="js-dragbar-img" src="http://placehold.it/300x400">
-              <p><span>Android.com Marshmallow Launch &mdash; </span>Worked as part of a team at Instrument to build new product pages around the release of their Marshmallow OS update.</p>
+            <a href="https://events.google.com/io2016/attend">
+              <img class="js-dragbar-img" src="images/emerson-collective.png">
+              <p><span>Emerson Collective &mdash; </span>SCSS and interactive javascript support - I helped team members at Instrument get this project out the door (end enjoyed every minute of it).</p>
             </a>
           </li>
-          <li class="js-dragbar-item vertical">
+          <li class="js-dragbar-item">
             <a href="https://events.google.com/io2016/attend">
-              <img class="js-dragbar-img" src="http://placehold.it/300x400">
-              <p><span>Google I/O 2016 Attending &mdash; </span>Prototyped the first /attending page for Google's yearly developer conference, I/O. Another Instrument project. </p>
+              <img class="js-dragbar-img" src="images/unfiltered-news.png">
+              <p><span>Unfiltered.news &mdash; </span>Development of an interactive application as a partnership between Instrument and Google Jigsaw. Unfiltered.news promotes "hidden" news that is important but not necessarily mainstream.</p>
+            </a>
+          </li>
+          <!--<li class="js-dragbar-item">
+            <a href="https://events.google.com/io2016/attend">
+              <img class="js-dragbar-img" src="">
+              <p><span>Google I/O 2016 &mdash; </span>Developed /attending page for Google's yearly developer conference, I/O. Another Instrument project.</p>
+            </a>
+          </li>-->
+          <li class="js-dragbar-item">
+            <a href="http://www.android.com/versions/marshmallow-6-0/">
+              <img class="js-dragbar-img" src="images/android.png">
+              <p><span>Android.com Marshmallow Launch &mdash; </span>Worked as part of a team at Instrument to build new product pages around the release of their Marshmallow OS update.</p>
             </a>
           </li>
           <li class="js-dragbar-item">
             <a href="http://www.standupcomedytoo.com/">
-              <img class="js-dragbar-img" src="http://placehold.it/400x300">
+              <img class="js-dragbar-img" src="images/standup-comedy.png">
               <p><span>Stand Up Comedy &mdash; </span>Bespoke Shopify theme for a high-end avant garde retail outift based in Portland, OR. Design by Scott Ponik</p>
             </a>
           </li>
-          <li class="js-dragbar-item">
+          <!--<li class="js-dragbar-item">
             <a href="http://www.cloneawilly.com">
               <img class="js-dragbar-img" src="http://placehold.it/400x300">
-              <p><span>Empire Labs and Clone-A-Willy &mdash; </span>This client needed a custom Shopify experience and site redesign, and I helped them find and hire incredible talent and also rebuilt their site. Their conversions doubled within a few month of the relaunch.</p>
+              <p><span>Empire Labs and Clone-A-Willy &mdash; </span>This client needed a custom Shopify experience and site redesign, and I helped them find and hire incredible talent and rebuild their site. Their conversions doubled within a few months of the relaunch.</p>
             </a>
-          </li>
+          </li>-->
           <li class="js-dragbar-item">
             <a href="#">
-              <img class="js-dragbar-img" src="http://placehold.it/400x300">
+              <img class="js-dragbar-img" src="images/todd-templeman.png">
               <p><span>Todd Templeman &mdash; </span>Designed by Erika Hassinger, built on Koken's CMS. I really enjoy using Koken as an alternative to Squarespace or WordPress because it's lightweight, the UI is easy for clients to use, and it has excellent image optimization built in.</p>
             </a>
           </li>
           <li class="js-dragbar-item">
             <a href="#">
-              <img class="js-dragbar-img" src="http://placehold.it/400x300">
+              <img class="js-dragbar-img" src="images/shawn-steward.png">
               <p><span>Shawn Steward &mdash; </span>Also designed by Erika Hassinger, also built on Koken's CMS. A fun study in form and using multiple page layouts.</p>
             </a>
           </li>
-          <li class="js-dragbar-item vertical">
         </ul>
      </div>   
   </section>
   
-  <section id="two" class="about" data-link-ref="two">
-    <div class="methods">
-      <!--<h3>Methods</h3>
-      <ul>
-        <li>SCSS</li>
-        <li>Componetized JS</li>
-        <li>Responsive web development</li>
-        <li>Performance Budgets</li>
-        <li>ES6/ESNext</li>
-        <li>Greensock (GSAP)</li>
-        <li>User Experience</li>
-        <li>Empathy-driven development</li>
-        <li>WordPress, Koken & Shopify custom themes</li>
-      </ul>
+  <section class="contact">
+    <div class="contact-wrapper">
+      <h2 class="heading js-heading">About</h2>
+      <p class="about">
+      I'm a front-end developer at Instrument where I make accessible and performant applications and websites. In my free time I design and build interiors, climb mountains and rocks, travel, and volunteer. Want to work together? Hit me up!  
+      </p> 
+      <dl>
+        <dd class="percentage percentage-65"><span class="label">Componetized JS</span></dd>
+        <dd class="percentage percentage-65"><span class="label">TypeScript</span></dd>
+        <dd class="percentage percentage-65"><span class="label">Perf Budgets</span></dd>
+        <dd class="percentage percentage-65"><span class="label">React</span></dd>
+        <dd class="percentage percentage-70"><span class="label">ES6/ESNext</span></dd>
+        <dd class="percentage percentage-80"><span class="label">Sketch</span></dd>
+        <dd class="percentage percentage-80"><span class="label">Photoshop</span></dd>
+        <dd class="percentage percentage-85"><span class="label">Greensock</span></dd>
+        <dd class="percentage percentage-90"><span class="label">User Experience</span></dd>
+        <dd class="percentage percentage-90"><span class="label">Accessibility</span></dd>
+        <dd class="percentage percentage-100"><span class="label">CMS Development</span></dd>
+        <dd class="percentage percentage-100"><span class="label">RWD</span></dd>
+        <dd class="percentage percentage-100"><span class="label">SCSS</span></dd>
+      </dl>
     </div>
-    <div class="about">
-      Loyal lover of the digital-first creative agency where I work, <a href="http://www.instrument.com">Instrument</a>. 
-      Washington DC => Portland => New Orleans => San Francisco => Portland => Morelia, Mexico => Buenos Aires => Portland. 
-      Freelance developer since 2013. I also do interior design &amp; build as a hobby. 
-    </div> -->
-  </section>
-  
-  <section id="three" class="contact" data-link-ref="three">
+    <footer>
+      <ul>
+        <li>Email</li>
+        <li>LinkedIn</li>
+        <li>Github</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
+    </footer>
   </section>
 <script src="public/js/ThrowPropsPlugin.js"></script>
 <script src="public/js/site.js"></script>

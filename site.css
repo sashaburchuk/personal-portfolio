@@ -1,0 +1,238 @@
+/*To Do: when 'contact' is hovered on, rain some pretty confetti */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+  font-family: serif;
+  color: rgba(0,0,0,0.78);
+}
+ h1 {
+   margin-right: 24px;
+ }
+
+ section {
+   position: relative;
+ }
+
+/* Use Romana font? */
+
+.heading {
+  height: 80px;
+  font-size: 32px;
+}
+
+.intro {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  background: #FFD0F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro a {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -79px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border: 2px solid rgba(0,0,0,0.78);
+  color: rgba(0,0,0,0.78);
+  text-decoration: none;
+  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
+  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
+}
+
+.intro a:hover {
+  background: aquamarine;
+  border: 2px solid #5830F0;
+  color: #5830F0;
+  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
+  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
+}
+
+.flex-center {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+li  a {
+    text-decoration: none;
+}
+
+
+.work {
+  min-height: 500px;
+  padding: 48px 40px;
+  overflow-y: scroll;
+}
+
+._scroll ul {
+  cursor: grab !important;
+  min-height: 550px;
+  padding-left: 0;
+  width: 6000px;
+}
+
+._scroll li {
+  float: left;
+  display: inline-block;
+  padding-right: 120px;
+  width: 600px;   
+}
+
+._scroll li:last-child {
+  padding-right: 0;
+}
+
+._scroll a {
+  color: rgba(0,0,0,0.78);
+}
+
+._scroll img {
+  width: 100%;
+  height: auto;
+}
+
+.contact {
+  width: 100vw;
+  background-color: #70B5FF;
+  padding: 48px 40px;
+}
+
+.about {
+  max-width: 700px;
+}
+
+dl {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+
+dt {
+  align-self: flex-start;
+  width: 100%;
+  font-weight: 700;
+  display: block;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+
+.label {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  font-size: 14px;
+  width: 150px;
+  background-color: transparent;
+  position: absolute;
+  left: -40px;
+  justify-content: flex-end;
+}
+
+.percentage {
+  font-size: .8em;
+  line-height: 1;
+  width: 100%;
+  height: 28px;
+  margin-left: 130px;
+}  
+
+/* TO DO: Correctly position text off screen so it's accessible */
+
+.percentage:after {
+  content: "";
+  display: block;
+  background-color: transparent;
+  background-image: radial-gradient(white 50%, transparent 1%), radial-gradient(white 50%, transparent 1%);
+  background-size: 15px 15px;
+  background-position: 0 0, 0px 0px;
+  text-indent: -9999px;
+  width: 50px;
+  margin-bottom: 10px;
+  height: 14px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.percentage-65:after {
+  width: 65%;
+}
+
+.percentage-70:after {
+  width: 70%;
+}
+
+.percentage-80:after {
+  width: 80%;
+}
+
+.percentage-85:after {
+  width: 85%;
+}
+
+.percentage-90:after {
+  width: 90%;
+}
+
+.percentage-100:after {
+  width: 100%;
+}
+
+.contact-wrapper {
+  max-width: 700px;
+  margin: 48px auto 120px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: aqua;
+}
+
+footer li {
+  margin-right: 40px;
+  color: #9500FF;
+}
