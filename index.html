@@ -5,8 +5,8 @@
 	<meta http-equiv=X-UA-Compatible content="IE=edge">
 	<meta name=viewport content="width=device-width,initial-scale=1">
 	<meta name=description content="">
-  <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
-  <link rel="stylesheet" type="text/css" href="site.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/site.css">
 	<title>Sasha Burchuk | Frontend Developer</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
@@ -41,53 +41,53 @@
     </script>
   </section>
   
-  <section id="one" class="work js-draggable" data-link-ref="one">
-    <h2 class="heading js-heading">Recent Work</h2>
-      <div class="_scroll js-draggable-container">
-        <ul class="_handle cf js-draggable-scroller">
-          <li class="js-dragbar-item">
+  <section id="one" class="work">
+    <h2 class="heading">Recent Work</h2>
+      <div class="_scroll">
+        <ul class="js-scrollable-container cf">
+          <li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="https://events.google.com/io2016/attend">
               <img class="js-dragbar-img" src="images/emerson-collective.png">
               <p><span>Emerson Collective &mdash; </span>SCSS and interactive javascript support - I helped team members at Instrument get this project out the door (end enjoyed every minute of it).</p>
             </a>
           </li>
-          <li class="js-dragbar-item">
+          <li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="https://events.google.com/io2016/attend">
               <img class="js-dragbar-img" src="images/unfiltered-news.png">
               <p><span>Unfiltered.news &mdash; </span>Development of an interactive application as a partnership between Instrument and Google Jigsaw. Unfiltered.news promotes "hidden" news that is important but not necessarily mainstream.</p>
             </a>
           </li>
-          <!--<li class="js-dragbar-item">
+          <!--<li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="https://events.google.com/io2016/attend">
               <img class="js-dragbar-img" src="">
               <p><span>Google I/O 2016 &mdash; </span>Developed /attending page for Google's yearly developer conference, I/O. Another Instrument project.</p>
             </a>
           </li>-->
-          <li class="js-dragbar-item">
+          <li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="http://www.android.com/versions/marshmallow-6-0/">
               <img class="js-dragbar-img" src="images/android.png">
               <p><span>Android.com Marshmallow Launch &mdash; </span>Worked as part of a team at Instrument to build new product pages around the release of their Marshmallow OS update.</p>
             </a>
           </li>
-          <li class="js-dragbar-item">
+          <li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="http://www.standupcomedytoo.com/">
               <img class="js-dragbar-img" src="images/standup-comedy.png">
               <p><span>Stand Up Comedy &mdash; </span>Bespoke Shopify theme for a high-end avant garde retail outift based in Portland, OR. Design by Scott Ponik</p>
             </a>
           </li>
-          <!--<li class="js-dragbar-item">
+          <!--<li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="http://www.cloneawilly.com">
               <img class="js-dragbar-img" src="http://placehold.it/400x300">
               <p><span>Empire Labs and Clone-A-Willy &mdash; </span>This client needed a custom Shopify experience and site redesign, and I helped them find and hire incredible talent and rebuild their site. Their conversions doubled within a few months of the relaunch.</p>
             </a>
           </li>-->
-          <li class="js-dragbar-item">
+          <li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="#">
               <img class="js-dragbar-img" src="images/todd-templeman.png">
               <p><span>Todd Templeman &mdash; </span>Designed by Erika Hassinger, built on Koken's CMS. I really enjoy using Koken as an alternative to Squarespace or WordPress because it's lightweight, the UI is easy for clients to use, and it has excellent image optimization built in.</p>
             </a>
           </li>
-          <li class="js-dragbar-item">
+          <li class="js-recent-work-item revealer" data-recent-work-item>
             <a href="#">
               <img class="js-dragbar-img" src="images/shawn-steward.png">
               <p><span>Shawn Steward &mdash; </span>Also designed by Erika Hassinger, also built on Koken's CMS. A fun study in form and using multiple page layouts.</p>
@@ -129,7 +129,6 @@
       </ul>
     </footer>
   </section>
-<script src="public/js/ThrowPropsPlugin.js"></script>
-<script src="public/js/site.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>

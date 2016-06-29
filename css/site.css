@@ -18,6 +18,10 @@ body {
    margin-right: 24px;
  }
 
+ p {
+   font-family: sans-serif;
+ }
+
  section {
    position: relative;
  }
@@ -45,6 +49,7 @@ body {
 }
 
 .intro a {
+  font-family: sans-serif;
   display: block;
   position: absolute;
   bottom: 40px;
@@ -95,6 +100,7 @@ li  a {
   min-height: 500px;
   padding: 48px 40px;
   overflow-y: scroll;
+  background-color: #FFF082;
 }
 
 ._scroll ul {
@@ -102,6 +108,16 @@ li  a {
   min-height: 550px;
   padding-left: 0;
   width: 6000px;
+}
+
+.enhanced .revealer {
+  opacity: 0.8;
+  transition: opacity 500ms, ease-in-out;
+}
+
+.enhanced .revealed {
+  opacity: 1;
+  transition: opacity 500ms,  ease-in-out;
 }
 
 ._scroll li {
@@ -112,7 +128,7 @@ li  a {
 }
 
 ._scroll li:last-child {
-  padding-right: 0;
+  padding-right: 40px;
 }
 
 ._scroll a {
