@@ -1,0 +1,51 @@
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.project-description {
+  min-height: 500px;
+  padding: 48px 40px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.project-description .heading, .project .paragraph {
+  margin-left: 2%;
+}
+
+.bottom-navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+  position: absolute;
+  bottom: 48px;
+}
+
+.bottom-navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.next-link {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.next-link span {
+  margin-left: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.next-link span svg {
+  width: 100%;
+  height: auto;
+}

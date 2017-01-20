@@ -14,12 +14,31 @@ body {
   font-family: serif;
   color: rgba(0,0,0,0.78);
 }
- h1 {
-   margin-right: 24px;
+
+ .name-logo {
+  background: url(../images/sasha-burchuk-header.png) center center no-repeat;
+  margin-right: 24px;
+  height: 50px;
+  width: 350px;
+  background-size: contain;
  }
 
+ .-off-screen {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1px; 
+  }
+
  p {
-   font-family: sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   margin-top: 0;
  }
 
  section {
@@ -29,27 +48,28 @@ body {
 /* Use Romana font? */
 
 .heading {
-  height: 80px;
   font-size: 32px;
+  margin-bottom: 2%;
 }
 
 .intro {
   z-index: 0;
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  /*height: 100%;*/
+  /*min-height: 100vh;*/
+  min-height: 25vh;
   min-width: 100vw;
   opacity: 1;
   top: 0;
   left: 0;
-  background: #FFD0F2;
+  /*background: #FFD0F2;*/
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.intro a {
-  font-family: sans-serif;
+/*.intro a {
+  font-family: 'Open Sans', sans-serif;
   display: block;
   position: absolute;
   bottom: 40px;
@@ -71,12 +91,18 @@ body {
   color: #5830F0;
   transition: background 100ms, color 550ms, border 550ms, ease-in-out;
   transition: background 100ms, color 550ms, border 550ms, ease-in-out;
+}*/
+
+.intro p {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 20px;
 }
 
 .flex-center {
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  /*height: 100%;
+  min-height: 100vh;*/
   min-width: 100vw;
   opacity: 1;
   top: 0;
@@ -85,7 +111,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-  
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   display: inline-block;
   list-style-type: none;
@@ -96,159 +127,84 @@ li  a {
 }
 
 
-.work {
+.section-container {
   min-height: 500px;
   padding: 48px 40px;
-  overflow-y: scroll;
-  background-color: #FFF082;
 }
 
-._scroll ul {
-  cursor: grab !important;
-  min-height: 550px;
-  padding-left: 0;
-  width: 6000px;
-}
-
-.enhanced .revealer {
-  opacity: 0.8;
-  transition: opacity 500ms, ease-in-out;
-}
-
-.enhanced .revealed {
-  opacity: 1;
-  transition: opacity 500ms,  ease-in-out;
-}
-
-._scroll li {
-  float: left;
-  display: inline-block;
-  padding-right: 120px;
-  width: 600px;   
-}
-
-._scroll li:last-child {
-  padding-right: 40px;
-}
-
-._scroll a {
-  color: rgba(0,0,0,0.78);
-}
-
-._scroll img {
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
   width: 100%;
-  height: auto;
 }
 
-.contact {
-  width: 100vw;
-  background-color: #70B5FF;
-  padding: 48px 40px;
+.container .heading, .container .paragraph {
+  margin-left: 2%;
 }
 
-.about {
-  max-width: 700px;
+.paragraph {
+  line-height: 1.5;
+  max-width: 650px;
 }
 
-dl {
-  display: flex;
-  background-color: transparent;
-  flex-direction: column;
-  width: 100%;
-  max-width: 700px;
-  position: relative;
-}
-
-dt {
-  align-self: flex-start;
-  width: 100%;
-  font-weight: 700;
-  display: block;
+.grid h3 {
   text-align: left;
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-left: 130px;
+  margin-top: 8px;
+  font-weight: normal;
+  color: black;
 }
 
-.label {
-  color: white;
-  display: flex;
-  align-items: center;
-  height: 28px;
-  font-size: 14px;
-  width: 150px;
-  background-color: transparent;
-  position: absolute;
-  left: -40px;
-  justify-content: flex-end;
-}
-
-.percentage {
-  font-size: .8em;
-  line-height: 1;
-  width: 100%;
-  height: 28px;
-  margin-left: 130px;
-}  
-
-/* TO DO: Correctly position text off screen so it's accessible */
-
-.percentage:after {
-  content: "";
-  display: block;
-  background-color: transparent;
-  background-image: radial-gradient(white 50%, transparent 1%), radial-gradient(white 50%, transparent 1%);
-  background-size: 15px 15px;
-  background-position: 0 0, 0px 0px;
-  text-indent: -9999px;
-  width: 50px;
-  margin-bottom: 10px;
-  height: 14px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.percentage-65:after {
-  width: 65%;
-}
-
-.percentage-70:after {
-  width: 70%;
-}
-
-.percentage-80:after {
-  width: 80%;
-}
-
-.percentage-85:after {
-  width: 85%;
-}
-
-.percentage-90:after {
-  width: 90%;
-}
-
-.percentage-100:after {
+.grid .project {
+  float: left;
+  max-width: 29.333%;
+  margin: 2%;
+  text-align: center;
+  text-decoration: none;
   width: 100%;
 }
 
-.contact-wrapper {
-  max-width: 700px;
-  margin: 48px auto 120px;
+.work .heading {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .grid .project {
+    max-width: 46%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid .project {
+    max-width: 100%;
+    margin: 20px 0; 
+  } 
+}
+
+.grid .project img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%; 
+}
+
+.project a img {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+
+.project a:hover img {
+  opacity: 0.8;
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
-  background-color: aqua;
+  /*background-color: aqua;*/
 }
 
 footer li {
   margin-right: 40px;
-  color: #9500FF;
+  /*color: #9500FF;*/
 }
